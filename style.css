@@ -1,0 +1,133 @@
+/*
+font-family: 'Josefin Sans', sans-serif;
+Desaturated Red: hsl(0, 36%, 70%)
+Soft Red: hsl(0, 93%, 68%)
+*/
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-size: 16px;
+  color: hsl(0, 36%, 70%);
+  background-image: url(img/bg-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+main {
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+}
+
+header {
+  padding-left: 100px;
+}
+
+section {
+  height: 500px;
+  padding: 100px 150px 0px 100px;
+}
+
+section h1 {
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  font-size: 50px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+section h1 span {
+  font-weight: 600;
+  color: #000;
+}
+
+section p {
+  margin-bottom: 40px;
+  line-height: 2;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.email {
+  width: 100%;
+  height: 70px;
+  position: relative;
+}
+
+#email {
+  border-radius: 25px;
+  padding: 15px;
+  width: 100%;
+  max-height: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  border: 1px solid hsl(0, 36%, 70%);
+  outline: none;
+}
+
+#email::placeholder {
+  color: hsl(0, 36%, 70%);
+}
+
+.erroricon {
+  position: absolute;
+  right: 95px;
+  top: 13px;
+  visibility: hidden;
+}
+
+.submit {
+  width: 80px;
+  height: 50px;
+  border-radius: 25px;
+  padding: 10px;
+  position: absolute;
+  right: 0;
+  border: 1px solid hsl(0, 36%, 70%);
+  background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  box-shadow: 0px 10px 10px hsl(0, 36%, 80%);
+  cursor: pointer;
+  outline: none;
+}
+
+.submit:hover {
+  border: none;
+  background-image: linear-gradient(135deg, hsl(0, 80%, 96%), hsl(0, 74%, 84%));
+}
+
+.error {
+  position: absolute;
+  bottom: 0;
+  padding-left: 15px;
+  color: hsl(0, 93%, 68%);
+}
+
+picture {
+  order: 2;
+  height: 100vh;
+  overflow: hidden;
+}
+
+picture img {
+  width: auto;
+  height: 100%;
+}

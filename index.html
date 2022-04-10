@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/favicon-32x32.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Base Apparel</title>
+  </head>
+  <body>
+    <div class="container">
+      <main>
+        <header>
+          <figure><img src="img/logo.svg" alt="Logo" /></figure>
+        </header>
+        <section>
+          <h1>
+            We're<br /><span>coming<br />soon</span>
+          </h1>
+          <p>
+            Hello fellow shoppers! We're currently building our new <br />
+            fashion store. Add your email below to stay up-to-date with <br />
+            announcements and our launch deals.
+          </p>
+          <form action="subscribed.html" method="post" id="submitemail">
+            <div class="email">
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="Email Address"
+              />
+              <img
+                class="erroricon"
+                name="img"
+                src="img/icon-error.svg"
+                alt="Error icon"
+              />
+              <button type="submit" class="submit">
+                <img src="img/icon-arrow.svg" alt="Arrow icon" />
+              </button>
+              <div class="error">
+                <small name="msg"></small>
+              </div>
+            </div>
+          </form>
+        </section>
+      </main>
+      <picture>
+        <source media="(min-width: 600px)" srcset="img/hero-desktop.jpg" />
+        <img src="img/hero-mobile.jpg" alt="Base Apparel model" />
+      </picture>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
