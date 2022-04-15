@@ -16,48 +16,31 @@
   </head>
   <body>
     <div class="container">
+      <header><img src="img/logo.svg" alt="Base Apparel Logo" /></header>
+      <picture>
+        <source media="(min-width: 800px)" srcset="img/hero-desktop.jpg" />
+        <img src="img/hero-mobile.jpg" alt="Base Apparel Model"
+      /></picture>
       <main>
-        <header>
-          <figure><img src="img/logo.svg" alt="Logo" /></figure>
-        </header>
         <section>
           <h1>
             We're<br /><span>coming<br />soon</span>
           </h1>
           <p>
-            Hello fellow shoppers! We're currently building our new <br />
-            fashion store. Add your email below to stay up-to-date with <br />
-            announcements and our launch deals.
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
           </p>
-          <form action="subscribed.html" method="post" id="submitemail">
-            <div class="email">
-              <input
-                type="text"
-                name="email"
-                id="email"
-                placeholder="Email Address"
-              />
-              <img
-                class="erroricon"
-                name="img"
-                src="img/icon-error.svg"
-                alt="Error icon"
-              />
-              <button type="submit" class="submit">
-                <img src="img/icon-arrow.svg" alt="Arrow icon" />
-              </button>
-              <div class="error">
-                <small name="msg"></small>
-              </div>
-            </div>
-          </form>
         </section>
       </main>
-      <picture>
-        <source media="(min-width: 600px)" srcset="img/hero-desktop.jpg" />
-        <img src="img/hero-mobile.jpg" alt="Base Apparel model" />
-      </picture>
+      <form action="" method="get">
+        <input type="email" name="email" placeholder="Email Address" />
+        <button type="submit">
+          <img src="img/icon-arrow.svg" alt="Button Arrow Icon" />
+        </button>
+      </form>
+      <div class="msg"><small></small></div>
     </div>
-    <script src="main.js"></script>
+    <script src="src/main.js"></script>
   </body>
 </html>
