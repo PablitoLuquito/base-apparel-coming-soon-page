@@ -1,0 +1,82 @@
+html {
+  font-size: 62.5%;
+}
+
+header {
+  max-width: 500px;
+}
+
+section {
+  max-width: 500px;
+}
+
+section h1 {
+  font-size: 4rem;
+}
+
+form {
+  max-width: 600px;
+}
+
+input[type="email"] {
+  font-size: 1.6rem;
+}
+
+@media screen and (max-width: 885px) {
+  html {
+    font-size: 70%;
+  }
+
+  .container {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  body {
+    background-image: none;
+  }
+
+  header {
+    padding: 5%;
+  }
+
+  main {
+    max-width: 425px;
+    width: 100%;
+    justify-content: initial;
+  }
+
+  .mobile-img {
+    display: initial;
+    width: 100%;
+  }
+
+  .mobile-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  section {
+    width: 100%;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 7%;
+  }
+
+  section h1 {
+    letter-spacing: 1rem;
+  }
+
+  section p {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .desktop-img {
+    display: none;
+  }
+
+  form {
+    width: 100%;
+  }
+}

@@ -11,17 +11,22 @@
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="css/responsive.css"
+      media="screen and (max-width: 1280px)"
+      )
+    />
     <title>Base Apparel</title>
   </head>
   <body>
     <div class="container">
-      <header><img src="img/logo.svg" alt="Base Apparel Logo" /></header>
-      <picture>
-        <source media="(min-width: 800px)" srcset="img/hero-desktop.jpg" />
-        <img src="img/hero-mobile.jpg" alt="Base Apparel Model"
-      /></picture>
       <main>
+        <header><img src="img/logo.svg" alt="Base Apparel Logo" /></header>
+        <picture class="mobile-img">
+          <img src="img/hero-mobile.jpg" alt="Base Apparel Model" />
+        </picture>
         <section>
           <h1>
             We're<br /><span>coming<br />soon</span>
@@ -32,14 +37,22 @@
             and our launch deals.
           </p>
         </section>
+        <form action="" method="get">
+          <input type="email" name="email" placeholder="Email Address" />
+          <img
+            class="error-icon"
+            src="img/icon-error.svg"
+            alt="Email Error Icon"
+          />
+          <button type="submit">
+            <img src="img/icon-arrow.svg" alt="Button Arrow Icon" />
+          </button>
+          <div class="msg"><small></small></div>
+        </form>
       </main>
-      <form action="" method="get">
-        <input type="email" name="email" placeholder="Email Address" />
-        <button type="submit">
-          <img src="img/icon-arrow.svg" alt="Button Arrow Icon" />
-        </button>
-      </form>
-      <div class="msg"><small></small></div>
+      <picture class="desktop-img">
+        <img src="img/hero-desktop.jpg" alt="Base Apparel Model" />
+      </picture>
     </div>
     <script src="src/main.js"></script>
   </body>
