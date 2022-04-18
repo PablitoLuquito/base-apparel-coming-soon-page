@@ -37,9 +37,6 @@ header {
   display: none;
 }
 
-.mobile-img img {
-}
-
 main {
   display: flex;
   flex-direction: column;
@@ -82,7 +79,7 @@ form {
   position: relative;
 }
 
-input[type="email"] {
+input[type="input"] {
   position: absolute;
   top: 0;
   width: 90%;
@@ -93,14 +90,14 @@ input[type="email"] {
   padding-left: 20px;
   padding-right: 25%;
   bottom: 2px;
-  font-size: 1rem;
+  font-size: 1.6rem;
 }
 
-input[type="email"]::placeholder {
+input[type="input"]::placeholder {
   color: hsl(0, 36%, 70%);
 }
 
-.error-icon {
+#error-icon {
   position: absolute;
   right: 23%;
   top: 12.5px;
@@ -131,9 +128,6 @@ button[type="submit"]:hover {
   width: 90%;
   padding-left: 20px;
   bottom: 0;
-}
-
-.desktop-img {
 }
 
 .desktop-img img {
